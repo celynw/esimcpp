@@ -23,7 +23,7 @@ bridge = SimulatorBridge(
 )
 fps = 30
 time_in_ns = 0
-for _ in range(20)
+for _ in range(20):
 	# Get `rgb` (numpy image array) from some source
 	events = bridge.img2events(rgb, int(time_in_ns))
 	time_in_ns += (1 / fps)
